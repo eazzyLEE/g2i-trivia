@@ -26,11 +26,12 @@ const Quiz = () => {
   const handleAnswer = (answer) => {
     const newAnswers = [...answers];
     const newScene = scene + 1;
-    const count = correctCount;
+    let count = correctCount;
     newAnswers.push(answer);
     setAnswers(newAnswers);
     if (currentQuestion.correct_answer === answer) {
-      setCount(Number(count + 1));
+      count++;
+      setCount(count);
     }
     if (scene === pages) {
       Actions.results({

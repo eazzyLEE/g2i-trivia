@@ -7,15 +7,18 @@ export const home = StyleSheet.create({
   },
   header: {
     marginTop: 14,
+    fontSize: 20,
   },
   instruction: {
     marginTop: "50%",
-    width: 210,
+    width: 225,
     lineHeight: 25,
     textAlign: "center",
+    fontSize: 16,
   },
   score: {
     marginTop: "40%",
+    fontSize: 16,
   },
   begin: {
     position: "absolute",

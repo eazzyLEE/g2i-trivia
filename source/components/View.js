@@ -8,7 +8,10 @@ export const ResultView = ({ correct, question }) => (
   <>
     <View style={styles.view}>
       <HeaderText title={correct ? "+" : "-"} style={styles.sign} />
-      <RegularText title={decode(question.question)} style={styles.question} />
+      <RegularText
+        title={decode(question.question)}
+        style={[styles.question, !correct && styles.wrong]}
+      />
     </View>
     <View style={styles.divider} />
   </>
@@ -26,6 +29,9 @@ const styles = StyleSheet.create({
     width: 320,
     marginLeft: 15,
     lineHeight: 20,
+  },
+  wrong: {
+    color: "red",
   },
   divider: {
     backgroundColor: "#000",
