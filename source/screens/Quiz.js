@@ -1,5 +1,6 @@
 import React from "react";
 import { View } from "react-native";
+import { Actions } from "react-native-router-flux";
 import { Button, HeaderText, RegularText } from "../components";
 import { quiz as styles } from "./styles";
 
@@ -16,7 +17,7 @@ const Quiz = () => {
       </View>
 
       <View style={styles.buttonGrid}>
-        <Button title="TRUE" dark />
+        <Button title="TRUE" dark onPress={() => Actions.results()} />
         <Button title="FALSE" />
       </View>
 

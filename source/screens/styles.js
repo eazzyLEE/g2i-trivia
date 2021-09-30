@@ -57,3 +57,23 @@ export const quiz = StyleSheet.create({
     bottom: 40,
   },
 });
+
+export const results = StyleSheet.create({
+  background: {
+    flex: 1,
+    alignItems: "center",
+  },
+  header: {
+    marginTop: 14,
+    textAlign: "center",
+    lineHeight: 25,
+  },
+  resultsBox: {
+    marginTop: "20%",
+    height: "40%",
+  },
+  begin: {
+    position: "absolute",
+    bottom: 40,
+  },
+});
