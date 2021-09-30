@@ -1,5 +1,6 @@
 import React from "react";
 import { View } from "react-native";
+import { Actions } from "react-native-router-flux";
 import { Button, HeaderText, RegularText } from "../components";
 import { home as styles } from "./styles";
 
@@ -16,7 +17,11 @@ const Home = () => {
       />
       <RegularText title="Can you score 100%?" style={styles.score} />
 
-      <Button title="BEGIN" style={styles.begin} />
+      <Button
+        title="BEGIN"
+        style={styles.begin}
+        onPress={() => Actions.quiz()}
+      />
     </View>
   );
 };
