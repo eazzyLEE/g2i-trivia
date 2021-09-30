@@ -48,7 +48,7 @@ export const quiz = StyleSheet.create({
   buttonGrid: {
     flexDirection: "row",
     alignItems: "center",
-    width: "60%",
+    width: 245,
     justifyContent: "space-between",
     marginTop: "20%",
   },
@@ -70,7 +70,7 @@ export const results = StyleSheet.create({
   },
   resultsBox: {
     marginTop: "20%",
-    height: "40%",
+    height: "60%",
   },
   begin: {
     position: "absolute",

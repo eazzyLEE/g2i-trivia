@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, TouchableOpacity } from "react-native";
-import { RegularText } from ".";
+import { RegularText } from "./Text";
 
 export const Button = ({ dark, onPress, style, title }) => {
   return (
