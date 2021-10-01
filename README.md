@@ -1,5 +1,5 @@
 # g2i-trivia
-A 10-question, true or false, trivia app made with React Native for G2i
+A 10-question, true or false, trivia app made with React Native- G2i assessment
 
 ## Prerequisites
 - [Nodejs](https://nodejs.org/en/) (Best to use along with [yarn](https://yarnpkg.com) for this project)
@@ -10,8 +10,8 @@ A 10-question, true or false, trivia app made with React Native for G2i
 
 ## Base dependencies
 - [axios](https://github.com/axios/axios) _for http calls to external urls_
-- react-native-router-flux _for navigation between screens_
-- react-native-safe-area-context _a ReactNative/Expo dependency under the hood_
+- [react-native-router-flux](https://github.com/aksonov/react-native-router-flux) _for navigation between screens_
+- [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context) _a ReactNative/Expo dependency under the hood_
 
 ## Code Structure
 The main JavaScript part of this project is sub-divided into different folders for easy comprehension and for localization/separation of concerns.
