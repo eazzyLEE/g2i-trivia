@@ -5,6 +5,7 @@ import { decode } from "html-entities";
 import { getQuestions } from "../api";
 import { Button, HeaderText, Placeholder, RegularText } from "../components";
 import { quiz as styles } from "./styles";
+import showToast from "../components/Toast";
 
 const Quiz = () => {
   const [questions, setQuestions] = useState([]);
@@ -19,7 +20,9 @@ const Quiz = () => {
     setLoading(true);
     getQuestions()
       .then((response) => setQuestions(response.results))
-      .catch(() => {})
+      .catch((error) =>
+        showToast(error?.message || "Something went wrong", "error")
+      )
       .finally(() => setLoading(false));
   }, []);
 
