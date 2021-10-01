@@ -2,11 +2,12 @@ import React from "react";
 import { StyleSheet, TouchableOpacity } from "react-native";
 import { RegularText } from "./Text";
 
-export const Button = ({ dark, onPress, style, title }) => {
+export const Button = ({ dark, disabled, onPress, style, title }) => {
   return (
     <TouchableOpacity
       style={[styles.button, dark && styles.dark, style]}
       onPress={onPress}
+      disabled={disabled}
       activeOpacity={0.4}
     >
       <RegularText

@@ -8,10 +8,12 @@ export const ResultView = ({ correct, question }) => (
   <>
     <View style={styles.view}>
       <HeaderText title={correct ? "+" : "-"} style={styles.sign} />
-      <RegularText
-        title={decode(question.question)}
-        style={[styles.question, !correct && styles.wrong]}
-      />
+      <View testID="question">
+        <RegularText
+          title={decode(question?.question) || ""}
+          style={[styles.question, !correct && styles.wrong]}
+        />
+      </View>
     </View>
     <View style={styles.divider} />
   </>
